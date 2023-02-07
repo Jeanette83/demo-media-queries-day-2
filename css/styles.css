@@ -19,6 +19,15 @@ body {
     padding: 1rem;
 }
 
+.container > section:nth-of-type(even) {
+    background-color:  #b84030;
+}
+
+.container > section:nth-of-type(odd) {
+    background-color: #3d1f10;;
+    
+}
+
 h2 {
     font-size: 2rem;
     padding: 2rem 0;
