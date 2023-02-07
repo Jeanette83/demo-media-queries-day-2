@@ -21,10 +21,12 @@ body {
 
 .container > section:nth-of-type(even) {
     background-color:  #b84030;
+    margin-bottom: 1rem;
 }
 
 .container > section:nth-of-type(odd) {
     background-color: #516241;
+    margin-bottom: 1rem;
     
 }
 
