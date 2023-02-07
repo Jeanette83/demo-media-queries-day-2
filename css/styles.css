@@ -60,3 +60,9 @@ section a {
 section a:hover {
     background-color: rgba(0,0,0,0.6);
 }
+
+@media screen and (min-width: 544px) {
+    .container > section {
+        display: flex;
+    }
+}
