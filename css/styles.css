@@ -28,6 +28,11 @@ body {
     
 }
 
+section div {
+    padding: 1.5rem;
+    color: #fff;
+}
+
 h2 {
     font-size: 2rem;
     padding: 2rem 0;
