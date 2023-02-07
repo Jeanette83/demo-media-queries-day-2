@@ -65,4 +65,9 @@ section a:hover {
     .container > section {
         display: flex;
     }
+
+    section img,
+    section > div {
+        width: 50%;
+    }
 }
