@@ -60,7 +60,10 @@ section a {
 section a:hover {
     background-color: rgba(0,0,0,0.6);
 }
-
+/****** Ok, so what happens when you expand the browser is that the image can only
+grow so big, so the background starts to get bigger and bigger. To combat this, make
+the image and the paragraphs/button side by side in a flex. No gap needed, as you 
+want the color to blend***************/
 @media screen and (min-width: 544px) {
     .container > section {
         display: flex;
@@ -69,5 +72,22 @@ section a:hover {
     section img,
     section > div {
         width: 50%;
+    }
+}
+
+/**** Let's try something new. Let's put two sections next to each other, groups of
+two all the way down the page. Because each section is it's own flex container, this
+is us putting flex containers within flex containers. Shit's about to get Crazy!**/
+
+@media screen and (min-width: 1090px) {
+    .container {
+        display: flex;
+        flex-flow: wrap;  /***makes sure to push the next box into the row below******************/
+        gap:2%;
+    }
+
+    /*******don't forget to give each flex item 50% real estate on the row******************/
+    .container > section {
+        width: calc(98%/2);
     }
 }
