@@ -90,4 +90,12 @@ is us putting flex containers within flex containers. Shit's about to get Crazy!
     .container > section {
         width: calc(98%/2);
     }
+
+    /*** it pops the h1 in the first row as a flex item. We want it on it's own row,
+    so each box can be side by side. You COULD make a div for all 6 sections. Or...
+    tell the h1 to take up it's whole row!****/
+
+    .container h1 {
+        width: 100%;
+    }
 }
