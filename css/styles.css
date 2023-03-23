@@ -57,6 +57,7 @@ section a {
     text-decoration: none;
     text-align: center;
     width: 50%;
+    align-items: flex-end;
 }
 
 section a:hover {
